@@ -5,14 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
 
+    <!-- Bootstrap & Icons -->
     <link rel="stylesheet" href="vendors/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="vendors/boxicons/css/boxicons.min.css">
+    
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="styles/style.css">
-    <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-/>
-
 </head>
 <body>
   <!-- Navbar -->
@@ -36,9 +40,6 @@
               <li class="nav-item">
                 <a class="nav-link" href="#timeline">Education</a>
               </li>
-              <!-- <li class="nav-item">
-                <a class="nav-link" href="#news">News</a>
-              </li> -->
               <li class="nav-item">
                 <a class="nav-link" href="#contact">Contact</a>
               </li>
@@ -54,19 +55,19 @@
     <section class="header-section" id="header">
       <div class="container">
         <div class="row align-item-center justify-content-between">
-          <div class="col-md-6">
+          <div class="col-md-6" data-aos="fade-right">
             <p class="text-orange fw-semibold">Hammam Al Fakkar</p>
             <h1 class="header-title text-uppercase fw-bold">Junior <br class="d-none d-md-block">Software Engineers</h1>
 
-            <a href="" class="header-skill d-inline-flex align-items-center gap-2">Web Development
+            <a href="https://github.com/Elfakkar007" class="header-skill d-inline-flex align-items-center gap-2">Web Development
               <i class="bx bx-right-arrow-alt fs-4"></i>
             </a>
             <br>
-            <a href="" class="header-skill d-inline-flex align-items-center gap-2">Mobile Development
+            <a href="https://github.com/Elfakkar007" class="header-skill d-inline-flex align-items-center gap-2">Mobile Development
               <i class="bx bx-right-arrow-alt fs-4"></i>
             </a>
             <br>
-            <a href="" class="header-skill d-inline-flex align-items-center gap-2">UI&UX Designer
+            <a href="https://github.com/Elfakkar007" class="header-skill d-inline-flex align-items-center gap-2">UI&UX Designer
               <i class="bx bx-right-arrow-alt fs-4"></i>
             </a>
 
@@ -81,8 +82,12 @@
               </div>
             </div>
 
+            <button id="downloadCV" class="btn btn-download">
+               <i class="bx bx-download fs-5"></i> Download CV
+            </button>
+
           </div>
-          <div class="col-md-5">
+          <div class="col-md-5" data-aos="fade-left">
             <img src="images/pict-1.JPG" class="header-img mt-3 img-fluid  rounded" alt="">
           </div>
         </div>
@@ -90,7 +95,7 @@
     </section>
 
     <!-- Portfolio -->
-     <section class="portfolio-section" id="portfolio">
+     <section class="portfolio-section" id="portfolio" data-aos="fade-up">
       <div class="container">
         <p class="text-orange fw-semibold">Portfolio</p>
         <h2 class="section-title fw-uppercase mb-5">Selected Works</h2>
@@ -179,7 +184,7 @@
       <section class="skills-section" id="skills">
         <div class="container">
           <div class="row align-items-center justify-content-between">
-            <div class="col-md-6">
+            <div class="col-md-6" data-aos="fade-right">
               <p class="text-orange fw-semibold">Skills</p>
               <h2 class="section-title mb-5 text-white">Programming Skills</h2>
 
@@ -230,7 +235,7 @@
               </div>
              
             </div>
-            <div class="col-md-5">
+            <div class="col-md-5" data-aos="fade-left">
               <img src="images/pict-3.JPG" alt="" class="skill-img img-fluid rounded">
             </div>
           </div>
@@ -238,7 +243,7 @@
       </section>
 
       <!-- Working Period -->
-      <section class="timeline-section" id="timeline">
+      <section class="timeline-section" id="timeline" data-aos="fade-up">
         <div class="container">
           <p class="text-orange fw-semibold">Timeline</p>
           <h2 class="section-title fw-uppercase mb-5">Education Period</h2>
@@ -264,90 +269,17 @@
             <div class="col-md-4">Vocational High School Student</div>
             <div class="col-md-4">SMKN 1 Purwosari</div>
           </div>
-        </div>
+        </di>
       </div>
       </section>
     
-      <!-- News -->
 
-      <!-- <section class="portfolio-section" id="news">
-        <div class="container">
-          <p class="text-orange fw-semibold">News</p>
-          <h2 class="section-title fw-uppercase mb-5">Latest News</h2>
-  
-          <div class="swiper portfolio-swiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="card">
-                  <div class="card-body">
-                    <img src="images/news-1.png" alt="" class="card-img-top rounded mb-3">
-                    <h6 class="fw-semibold">Bagaimana cara membuat website E-commerce</h6>
-                    <p class="text-secondary fs-7">Desember, 01 2022</p>
-                    <a href="" class="text-orange">Lihat Selengkapnya</a>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="card">
-                  <div class="card-body">
-                    <img src="images/news-2.png" alt="" class="card-img-top rounded mb-3">
-                    <h6 class="fw-semibold">Bagaimana cara membuat website E-commerce</h6>
-                    <p class="text-secondary fs-7">Desember, 01 2022</p>
-                    <a href="" class="text-orange">Lihat Selengkapnya</a>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="card">
-                  <div class="card-body">
-                    <img src="images/news-3.png" alt="" class="card-img-top rounded mb-3">
-                    <h6 class="fw-semibold">Bagaimana cara membuat website E-commerce</h6>
-                    <p class="text-secondary fs-7">Desember, 01 2022</p>
-                    <a href="" class="text-orange">Lihat Selengkapnya</a>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="card">
-                  <div class="card-body">
-                    <img src="images/news-4.png" alt="" class="card-img-top rounded mb-3">
-                    <h6 class="fw-semibold">Bagaimana cara membuat website E-commerce</h6>
-                    <p class="text-secondary fs-7">Desember, 01 2022</p>
-                    <a href="" class="text-orange">Lihat Selengkapnya</a>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="card">
-                  <div class="card-body">
-                    <img src="images/news-5.png" alt="" class="card-img-top rounded mb-3">
-                    <h6 class="fw-semibold">Bagaimana cara membuat website E-commerce</h6>
-                    <p class="text-secondary fs-7">Desember, 01 2022</p>
-                    <a href="" class="text-orange">Lihat Selengkapnya</a>
-                  </div>
-                </div>
-              </div>
-        
-            </div>
-  
-            <div class="d-flex align-items-center justify-content-end gap-3 mt-4">
-              <button class="btn btn-light d-flex align-items-center justify-content-center btn-next">
-                <i class="bx bx-left-arrow-alt fs-5"></i>
-              </button>
-              <button class="btn btn-light d-flex align-items-center justify-content-center btn-prev">
-                <i class="bx bx-right-arrow-alt fs-5"></i>
-              </button>
-            </div>
-          </div>
-  
-        </div>
-       </section> -->
 
        <!-- contact -->
        <section class="portfolio-section" id="contact">
         <div class="container">
           <div class="row align-items-center justify-content-between">
-            <div class="col-md-6">
+            <div class="col-md-6"  data-aos="fade-right">
 
               <p class="text-orange fw-semibold">Contact</p>
               <h2 class="section-title fw-uppercase mb-5">Get In Touch</h2>
@@ -372,7 +304,7 @@
                 <div class="mb-0">Hammam</div>
               </div> -->
             </div>
-            <div class="col-md-5">
+            <div class="col-md-5" data-aos="fade-left">
               <form action="#">
                 <input type="text" name="name" id="" placeholder="nama" class="form-control rounded-0 mb-2">
                 <input type="email" name="email" id="" placeholder="E-Mail " class="form-control rounded-0 mb-2">
@@ -393,29 +325,59 @@
 
 
 
-    <script src="vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script>
-      var swiper = new Swiper(".portfolio-swiper", {
-        slidesPerView: 3,
-        spaceBetween: 30,
-        navigation:{
-          nextEl: ".btn-prev",
-          prevEl: ".btn-next",
-        },
-        breakpoints: {
-    // when window width is >= 320px
-    320: {
-      slidesPerView: 2,
-      spaceBetween: 20
+    <!-- Bootstrap & Swiper JS -->
+<script src="vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<!-- AOS JS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<!-- Initialize AOS -->
+<script>
+  AOS.init({
+    duration: 800,       // Durasi animasi (ms)
+    easing: 'ease-in-out', // Jenis easing
+    once: true           // Animasi hanya sekali
+  });
+
+  // Swiper initialization (existing code)
+  var swiper = new Swiper(".portfolio-swiper", {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    navigation: {
+      nextEl: ".btn-prev",
+      prevEl: ".btn-next",
     },
-    // when window width is >= 480px
-    480: {
-      slidesPerView: 3,
-      spaceBetween: 30
+    breakpoints: {
+      320: {
+        slidesPerView: 2,
+        spaceBetween: 20
+      },
+      480: {
+        slidesPerView: 3,
+        spaceBetween: 30
+      }
     }
-  }
-      });
-    </script>
+  });
+
+  //cv
+  document.getElementById('downloadCV').addEventListener('click', function() {
+    // You can add tracking here if needed
+    console.log('CV download initiated');
+    
+    // Create a temporary anchor tag
+    const link = document.createElement('a');
+    link.href = 'CV/CV Hammam.pdf';
+    link.download = 'CV Hammam.pdf'; // This will be the filename
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    
+    // Optional: Trigger a thank you message
+    setTimeout(() => {
+        alert('Thank you for downloading my CV!');
+    }, 500);
+});
+</script>
 </body>
 </html>
